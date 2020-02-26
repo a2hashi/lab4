@@ -1,88 +1,180 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-<head>
-	<title>HCI Project Portfolio</title>	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
+<title>Hapy Tank</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+#dvPreview
+{
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+    min-height: 400px;
+    min-width: 400px;
+    display: none;
+}
+body 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
-</head>
+.icon-bar {
+  width: 100%;
+  background-color: #D2691E;
+  overflow: auto;
+}
 
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #FF8C00;
+}
+
+.active {
+  background-color: #FFA500;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.container{
+   margin: 0 auto;
+   border: 0px solid black;
+   width: 100%;
+   height: 250px;
+   border-radius: 3px;
+   background-color: #FFF1E1;
+   text-align: center;
+}
+/* Preview */
+.preview{
+   width: 170px;
+   height: 170px;
+   border: 1px solid black;
+   margin: 0 auto;
+   background: white;
+}
+
+.preview img{
+   display: none;
+}
+/* Button */
+.button{
+   border: 0px;
+   background-color: #FF8C00;
+   color: white;
+   padding: 5px 15px;
+   margin-left: 10px;
+}
+div.a {
+  text-align: center;
+}
+body {
+  background-image: "images.jpeg";
+  background-color: #FFF1E1;
+
+}
+
+</style>
 <body>
-	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-		</div>
 
 
-		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div class="project" id="project1">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
-			</a>
-		</div>
-		<div class="project" id="project2">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Needfinding</p>
-			</a>
-		</div>
-		<div class="project" id="project3">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
-			</a>
-		</div>
-		<div class="project" id="project4">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div class="project" id="project5">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div class="project" id="project6">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div class="project" id="project7">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div class="project" id="project8">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
-			</a>
-		</div>
-	</div>
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-comment">upload text</i></a> 
+  <a href="https://www.facebook.com/?stype=lo&jlou=AfcUy1Z98qfXZYGrQtsbzCn0Gg9XZ9SNu2nYSn3On73BztRUtPws-uZt64FSJ9tMSbf5b7t8WFEDCTy3kf3393X58J-tTcCyLDO4Y-lDXdwh5g&smuh=65027&lh=Ac_eOm-8_WDNrUPe"><i class="fa fa-share-alt-square">share</i></a> 
+<a href="#"><i class="fa fa-drivers-license">your page</i></a> 
+  <a href="#"><i class="fa fa-power-off">logout</i></a> 
+ <a href="#"><i class="fa fa-question"></i>help</a> 
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+</div>
+
+
+<div class ="a">
+  <h1> Happy Tank</h1>
+  <p>This is your personal  photo memory page</p>
+   <p>Upload Your Memories, Keep them, Save them, Share Them.</p>
+</div>
+
+
+
+
+<img src="jar_slower_3.gif" alt="This will display an animated GIF" class= "center" >
+
+
+<input id="fileupload" type="file" multiple class= "center" />
+<hr />
+
+<br />
+<br />
+
+
+<p id="demo"></p>
+<div id="dvPreview" class= "center">
+</div>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+
+<div class ="a">
+  <h1>Previous Uploads</h1>
+  </div>
+
+
+
+
+<img src="1.jpeg" alt="This will display an image" class= "center" >
+<img src="2.jpeg" alt="This will display an image" class= "center" >
+<img src="3.jpeg" alt="This will display an image" class= "center" >
+<img src="4.jpeg" alt="This will display an image" class= "center" >
+
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">
+$(function () {
+    $("#fileupload").change(function () {
+        $("#dvPreview").html("");
+        var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+        if (regex.test($(this).val().toLowerCase())) {
+            if ($.browser.msie && parseFloat(jQuery.browser.version) <= 9.0) {
+                $("#dvPreview").show();
+                $("#dvPreview")[0].filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = $(this).val();
+            }
+            else {
+                if (typeof (FileReader) != "undefined") {
+                    $("#dvPreview").show();
+                    $("#dvPreview").append("<img />");
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $("#dvPreview img").attr("src", e.target.result);
+                    }
+                    reader.readAsDataURL($(this)[0].files[0]);
+                } else {
+                    alert("This browser does not support FileReader.");
+                }
+            }
+        } else {
+            alert("Please upload a valid image file.");
+        }
+    });
+});
+</script>
+
+
+
+
 </body>
-</html>
+
+
+
+
+
+</html> 
